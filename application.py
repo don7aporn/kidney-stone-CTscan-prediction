@@ -1,6 +1,6 @@
 
 import streamlit as st
-from PIL import Image
+from Pillow import Image
 from ultralytics import YOLO
 
 st.title("Kidney Stone Detection")
