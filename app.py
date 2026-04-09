@@ -1,6 +1,6 @@
-
 import streamlit as st
 from PIL import Image
+import numpy as np
 from ultralytics import YOLO
 
 st.title("Kidney Stone Detection")
@@ -14,7 +14,11 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
-    results = model(image)
+    # แปลง PIL เป็น numpy array
+    image_array = np.array(image)
 
-    for r in results:
-        st.image(r.plot(), caption="Prediction")
+    # ทำการทำนาย
+    results = model(image_array)
+
+    # แสดงผล
+    st.image(results[0].plot(), caption="Prediction", use_column_width=True)
