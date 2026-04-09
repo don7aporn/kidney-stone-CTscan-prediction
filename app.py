@@ -6,7 +6,7 @@ from ultralytics import YOLO
 st.title("Kidney Stone Detection")
 
 # โหลดโมเดล
-model = YOLO("yolov8m.pt") # เปลี่ยนเป็น yolov8m.pt
+model = YOLO("yolov8s.pt")
 
 uploaded_file = st.file_uploader("Upload Image", type=["jpg","png","jpeg"])
 
