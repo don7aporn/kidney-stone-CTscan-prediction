@@ -1,5 +1,7 @@
 import os
-print(os.listdir())
+
+print("Files in directory:", os.listdir())
+print("File size:", os.path.getsize("kidney_stone_model.pt"))
 
 from ultralytics import YOLO
 import cv2
