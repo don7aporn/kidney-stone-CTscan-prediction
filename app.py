@@ -13,7 +13,6 @@ import numpy as np
 
 st.title("Kidney Stone Detection")
 
-# โหลดโมเดล
 model = YOLO("yolov8s.pt")
 
 uploaded_file = st.file_uploader("Upload Image", type=["jpg","png","jpeg"])
