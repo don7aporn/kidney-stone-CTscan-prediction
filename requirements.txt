@@ -1,11 +1,11 @@
 streamlit
-ultralytics
+ultralytics==8.0.196
 
 torch
 torchvision
 pillow
 
-opencv-python-headless==4.8.1.78
+opencv-python-headless==4.7.0.72
 
 # 🔥 กัน dependency แอบลง
 --no-deps opencv-python
