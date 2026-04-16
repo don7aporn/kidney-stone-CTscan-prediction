@@ -3,6 +3,8 @@ import os
 print("Files in directory:", os.listdir())
 print("File size:", os.path.getsize("kidney_stone_model.pt"))
 
+import sys
+sys.modules['cv2'] = None
 from ultralytics import YOLO
 import cv2
 
