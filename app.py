@@ -6,6 +6,7 @@ print("File size:", os.path.getsize("kidney_stone_model.pt"))
 import sys
 sys.modules['cv2'] = None
 from ultralytics import YOLO
+
 import cv2
 
 cv2.setNumThreads(0)
